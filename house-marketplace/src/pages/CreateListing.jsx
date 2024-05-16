@@ -14,6 +14,7 @@ import Spinner from '../components/Spinner'
 import { toast } from 'react-toastify'
 
 const CreateListing = () => {
+  //eslint-disable-next-line
   const [geolocationEnabled, setGeolocationEnabled] = useState(true)
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
@@ -137,6 +138,8 @@ const CreateListing = () => {
                 break
               case 'running':
                 console.log('Upload is running')
+                break
+              default:
                 break
             }
           },

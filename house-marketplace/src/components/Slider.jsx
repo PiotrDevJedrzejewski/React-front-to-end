@@ -6,7 +6,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
 import Spinner from './Spinner'
-import { get } from 'firebase/database'
 
 const Slider = () => {
   const [loading, setLoading] = useState(true)
@@ -31,6 +30,10 @@ const Slider = () => {
   }, [])
 
   if (loading) return <Spinner />
+
+  if (listings.length === 0) {
+    return <></>
+  }
 
   return (
     listings && (

@@ -8,6 +8,7 @@ import Category from './Category'
 import CreateListing from './CreateListing'
 import Listing from './Listing'
 import Contact from './Contact'
+import EditListing from './EditListing'
 
 export {
   Explore,
@@ -20,4 +21,5 @@ export {
   CreateListing,
   Listing,
   Contact,
+  EditListing,
 }
